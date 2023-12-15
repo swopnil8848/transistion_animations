@@ -1,0 +1,48 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing:border-box;
+}
+
+section{
+    min-height: 50vh;
+}
+
+
+
+header{
+    min-height: 100vh;
+    background-color: skyblue;
+}
+
+
+section div{
+    height:fit-content;
+    background-color: skyblue;
+}
+
+section{
+    transform: translateY(300px);
+    transition:transform 2s;
+}
+
+.active{
+    transform:translateY(-50px);
+    /* background-color: black; */
+}
+
+@keyframes rotate {
+    0%{
+        transform:rotate(90deg)
+    }
+    50%{
+        transform:rotate(180deg)
+    }
+    100%{
+        transform:rotate(0deg)
+    }
+}
+
+header h1{
+    animation: rotate 2s ;
+}
